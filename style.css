@@ -7,6 +7,7 @@ h1 {
 
 .container
 {
+    display: flex;
     background-color:#FBC4AB ;
     width: 15%;
     top: 0px;
@@ -15,27 +16,32 @@ h1 {
     padding: 10px;
 }
 #left-container{
+    flex-direction: column;
     left: 0px;
 }
 
 #right-container{
-    right:0px;
+    flex-direction: column;
+    right: 0px;
 }
 
 .plant-holder{
-    position:relative;
+    align-content: center;
+    align-items: flex-start;
     height: 13%;
-    left: -10px;
+    /*left: -10px;*/
 }
 
 .plant{
-    position: absolute;
+    align-items: center;
+    /*position: absolute;*/
     max-width: 150%;
     max-height: 150%;
     z-index: 2;
 }
 
 .jar-walls{
+
     height: 80%;
     width: 60%;
     background: #d1e1df;
